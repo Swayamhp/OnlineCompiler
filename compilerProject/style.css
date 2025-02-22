@@ -1,0 +1,160 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+  padding:0;
+  background:linear-gradient(to left,skyblue,violet);
+  font-family: sans-serif;
+  color:white;
+}
+*{
+  margin:0;
+  padding:0;
+}
+html{
+  font-size:62.5%;
+  
+}
+.full-container{
+  display:flex;
+  flex-direction: column;
+ max-width:100rem;
+ max-height:100rem;
+  gap:15px;
+
+}
+.container{
+  display: flex;
+  justify-content: center;
+  width:100%;
+  height:40vh;;
+  text-align: center;
+  gap:20px;
+  flex-wrap: wrap;
+ 
+  }
+#editor {
+  border:5px solid lightblue;
+   width: 37rem;
+  height: 45rem;
+  border-radius: 20px;
+  font-size:20px;
+}
+.input-container textarea{
+  outline: none;
+  border:3px solid aquamarine;
+  display:block;
+  width:35rem;
+  height:18rem;
+  border-radius: 10px;
+  /* background-color: aqua; */
+  background-color:darkslategray;
+  color:white;
+  font-size:20px;
+}
+textarea:focus{
+  border-color:rgb(9, 225, 221);
+}
+.output-container{
+}
+.output{
+  z-index:5;
+position:relative;
+  text-align: left;
+  outline: none;
+  border:3px solid aquamarine;
+  display:block;
+  width:35rem;
+  height:18rem;
+  border-radius: 10px;
+  /* background-color: aqua; */
+  background-color:darkslategray;
+  color:white;
+  font-size:20px;
+}
+h1{
+text-align: center;
+}
+
+.btn{
+  margin-top:5px;
+  margin-bottom:10px;
+  border-radius: 5px;
+  border:1px solid blue;
+  background: linear-gradient(to left,violet,aqua);
+  cursor:pointer;
+  border-radius:5px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  width:35rem;
+  height:4rem;
+  transition:0.5s background;
+
+}
+.btn:hover{
+  background: violet;
+}
+.myDropdown{
+  border-radius: 8px;
+  background-color: rgb(154, 233, 206);
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  padding:10px 40px;
+}
+.myDropdown:focus{
+  outline:none;
+  outline-color:2px solid lightblue;
+}
+.selection-progress-container{
+  display: flex;
+  flex-direction: column;
+  justify-content:start;
+  align-items: center;
+  height:50%;
+  gap:10px;
+  
+}
+option{
+  background-color:deepskyblue;
+}
+.input-output-container{
+  font-size:20px;
+
+}
+
+
+
+
+
+/* Create a spinning circle */
+
+/* Animation for the spinner */
+.loading{
+  content:'';
+  position:absolute;
+  z-index:0;
+  height:50px;
+  width:50px;
+  border:5px solid white;
+  border-radius: 50%;
+  animation:spin 1s linear infinite;
+  left:40%;
+  top:40%;
+
+}
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+    border-top-color:lightblue;
+    border-right-color: lightblue;
+    border-bottom-color: lightblue;
+
+  }
+  100%{
+    transform: rotate(360deg);
+    border-top-color: lightblue;
+    border-right-color: lightblue;
+    border-bottom-color:lightblue;
+    
+
+  }
+}

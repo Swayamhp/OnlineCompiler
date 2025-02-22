@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+  <title>online compiler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="full-container"> 
+    <div> <h1>Online Compiler</h1>
+    </div> 
+ <div class="container">
+    <div class="selection-progress-container">
+
+ <select id="selectLang" class="myDropdown"name="options">
+        <option value="70" data-id="python" >Python</option>
+        <option value="91" data-id="java">Java</option>
+        <option value="52" data-id="c_cpp">C++</option>
+        <option value="75" data-id="c">C</option>
+        <option value="63" data-id="javascript">Javascript</option>
+    </select>
+    <select id="selectTheme" class="myDropdown" name="options">
+      <option value="default">Theme</option>
+      <option value="monokai">Monokai</option>
+      <option value="solarized_light">Solarized </option>
+      <option value="terminal">Terminal</option>
+      <option value="twilight">Twilight</option>
+      <option value="chaos">Chaos</option>
+      <option value="textmate">Textmate</option>
+  </select>
+  <div>
+    <input type="range" id="fontSizeSlider" min="8" max="50" value="16" step="1">
+    <span id="fontSizeValue">16px</span>
+</div>
+    </div>
+
+  <div id="editor"></div>
+  <div class="input-output-container">
+    <div class="input-container">
+        <textarea  type="text" class="input" placeholder="input here.." ></textarea>
+    </div>
+  <button class="run-btn btn">Run</button>
+  <div class="output-container">
+    <div class="output"></div>
+  </div>
+  <button class="clear-btn btn">Clear output</button>
+</div>
+</div>
+</div>
+</body>
+ <script type="module" src="script.js"></script>
+</html>
