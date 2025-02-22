@@ -17,8 +17,8 @@ Clone the repository to your local machine.
 
 bash
 Copy
-git clone https://github.com/yourusername/online-compiler.git
 Open the index.html file in your browser.
+and open live server
 
 Usage
 Open the project in your browser.
